@@ -11,7 +11,9 @@ import SwiftUI
 struct TimetableApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environmentObject(ElementaryTimetableModel())
+                .environmentObject(MiddleTimetableModel())
         }
     }
 }

@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09448271C7D2B0056F8E2 /* TimetableApp.swift */; };
-		95A0944B271C7D2B0056F8E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0944A271C7D2B0056F8E2 /* ContentView.swift */; };
+		95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0944A271C7D2B0056F8E2 /* HomeView.swift */; };
 		95A0944D271C7D2D0056F8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0944C271C7D2D0056F8E2 /* Assets.xcassets */; };
 		95A09450271C7D2D0056F8E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0944F271C7D2D0056F8E2 /* Preview Assets.xcassets */; };
+		95A09459271C7D6B0056F8E2 /* 일광초등학교시간표.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */; };
+		95A0945B271C7E780056F8E2 /* 일광중학교시간표.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */; };
+		95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0945F271C80260056F8E2 /* MiddleTimetable.swift */; };
+		95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */; };
+		95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */; };
+		95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95A09445271C7D2B0056F8E2 /* Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A09448271C7D2B0056F8E2 /* TimetableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableApp.swift; sourceTree = "<group>"; };
-		95A0944A271C7D2B0056F8E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95A0944A271C7D2B0056F8E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		95A0944C271C7D2D0056F8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A0944F271C7D2D0056F8E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "일광초등학교시간표.json"; sourceTree = "<group>"; };
+		95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "일광중학교시간표.json"; sourceTree = "<group>"; };
+		95A0945F271C80260056F8E2 /* MiddleTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTimetable.swift; sourceTree = "<group>"; };
+		95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetable.swift; sourceTree = "<group>"; };
+		95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetableModel.swift; sourceTree = "<group>"; };
+		95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTimetableModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				95A09448271C7D2B0056F8E2 /* TimetableApp.swift */,
-				95A0944A271C7D2B0056F8E2 /* ContentView.swift */,
+				95A0945D271C7F920056F8E2 /* Views */,
+				95A0945E271C7F980056F8E2 /* ViewModels */,
+				95A0945C271C7F890056F8E2 /* Models */,
+				95A09457271C7D4D0056F8E2 /* Resources */,
+				95A09456271C7D360056F8E2 /* Utilities */,
 				95A0944C271C7D2D0056F8E2 /* Assets.xcassets */,
 				95A0944E271C7D2D0056F8E2 /* Preview Content */,
 			);
@@ -65,6 +81,48 @@
 				95A0944F271C7D2D0056F8E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95A09456271C7D360056F8E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		95A09457271C7D4D0056F8E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */,
+				95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95A0945C271C7F890056F8E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */,
+				95A0945F271C80260056F8E2 /* MiddleTimetable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95A0945D271C7F920056F8E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95A0944A271C7D2B0056F8E2 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95A0945E271C7F980056F8E2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */,
+				95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A09459271C7D6B0056F8E2 /* 일광초등학교시간표.json in Resources */,
+				95A0945B271C7E780056F8E2 /* 일광중학교시간표.json in Resources */,
 				95A09450271C7D2D0056F8E2 /* Preview Assets.xcassets in Resources */,
 				95A0944D271C7D2D0056F8E2 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95A0944B271C7D2B0056F8E2 /* ContentView.swift in Sources */,
+				95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */,
+				95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */,
+				95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */,
+				95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */,
 				95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */,
+				95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
