@@ -17,6 +17,10 @@
 		95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */; };
 		95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */; };
 		95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */; };
+		95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0946B271CEC620056F8E2 /* HomeViewRow.swift */; };
+		95A09473271DBD030056F8E2 /* schoolInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09472271DBD030056F8E2 /* schoolInfo.json */; };
+		95A09475271DBFC20056F8E2 /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09474271DBFC20056F8E2 /* SchoolInfo.swift */; };
+		95A09477271DC1290056F8E2 /* SchoolInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetable.swift; sourceTree = "<group>"; };
 		95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetableModel.swift; sourceTree = "<group>"; };
 		95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTimetableModel.swift; sourceTree = "<group>"; };
+		95A0946B271CEC620056F8E2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		95A09472271DBD030056F8E2 /* schoolInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schoolInfo.json; path = ../../../Resources/schoolInfo.json; sourceTree = "<group>"; };
+		95A09474271DBFC20056F8E2 /* SchoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
+		95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 			children = (
 				95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */,
 				95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */,
+				95A09472271DBD030056F8E2 /* schoolInfo.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -104,6 +113,7 @@
 			children = (
 				95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */,
 				95A0945F271C80260056F8E2 /* MiddleTimetable.swift */,
+				95A09474271DBFC20056F8E2 /* SchoolInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				95A0944A271C7D2B0056F8E2 /* HomeView.swift */,
+				95A0946B271CEC620056F8E2 /* HomeViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 			children = (
 				95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */,
 				95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */,
+				95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 				95A09459271C7D6B0056F8E2 /* 일광초등학교시간표.json in Resources */,
 				95A0945B271C7E780056F8E2 /* 일광중학교시간표.json in Resources */,
 				95A09450271C7D2D0056F8E2 /* Preview Assets.xcassets in Resources */,
+				95A09473271DBD030056F8E2 /* schoolInfo.json in Resources */,
 				95A0944D271C7D2D0056F8E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,12 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */,
 				95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */,
+				95A09477271DC1290056F8E2 /* SchoolInfoModel.swift in Sources */,
 				95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */,
 				95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */,
 				95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */,
 				95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */,
 				95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */,
+				95A09475271DBFC20056F8E2 /* SchoolInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

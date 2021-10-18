@@ -14,6 +14,7 @@ struct TimetableApp: App {
             HomeView()
                 .environmentObject(ElementaryTimetableModel())
                 .environmentObject(MiddleTimetableModel())
+                .environmentObject(SchoolInfoModel())
         }
     }
 }
