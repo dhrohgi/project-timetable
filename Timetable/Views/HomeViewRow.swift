@@ -64,6 +64,7 @@ struct HomeViewRow: View {
                             .frame(width: 15, height: 15)
                         Text(address)
                             .font(Font.system(size: 11))
+                            .multilineTextAlignment(.leading)
                     }
                     
                 }

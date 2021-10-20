@@ -21,6 +21,7 @@
 		95A09473271DBD030056F8E2 /* schoolInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09472271DBD030056F8E2 /* schoolInfo.json */; };
 		95A09475271DBFC20056F8E2 /* SchoolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09474271DBFC20056F8E2 /* SchoolInfo.swift */; };
 		95A09477271DC1290056F8E2 /* SchoolInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */; };
+		95CCD7A2271FA042004ED55D /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCD7A1271FA042004ED55D /* TimeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		95A09472271DBD030056F8E2 /* schoolInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schoolInfo.json; path = ../../../Resources/schoolInfo.json; sourceTree = "<group>"; };
 		95A09474271DBFC20056F8E2 /* SchoolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfo.swift; sourceTree = "<group>"; };
 		95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoModel.swift; sourceTree = "<group>"; };
+		95CCD7A1271FA042004ED55D /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				95A0944A271C7D2B0056F8E2 /* HomeView.swift */,
 				95A0946B271CEC620056F8E2 /* HomeViewRow.swift */,
+				95CCD7A1271FA042004ED55D /* TimeTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */,
 				95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */,
 				95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */,
+				95CCD7A2271FA042004ED55D /* TimeTableView.swift in Sources */,
 				95A09475271DBFC20056F8E2 /* SchoolInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

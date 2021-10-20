@@ -24,19 +24,25 @@ struct HomeView: View {
                     
                     LazyVStack(spacing: 20) {
                         
-                        ForEach(schoolInfoModel.schoolInfos) { s in
+                        ForEach(1..<schoolInfoModel.schoolInfos.count) { index in
                             
-                            HomeViewRow(
-                                image: s.SCHUL_NM,
-                                school: s.SCHUL_NM,
-                                description: s.JU_ORG_NM,
-                                zipCode: s.ORG_RDNZC,
-                                phone: s.ORG_TELNO,
-                                address: s.ORG_RDNMA)
+                            let schoolInfo = schoolInfoModel.schoolInfos[index]
                             
+                            NavigationLink {
+                                TimeTableView()
+                            } label: {
+                                HomeViewRow(
+                                    image: schoolInfo.SCHUL_NM,
+                                    school: schoolInfo.SCHUL_NM,
+                                    description: schoolInfo.JU_ORG_NM,
+                                    zipCode: schoolInfo.ORG_RDNZC,
+                                    phone: schoolInfo.ORG_TELNO,
+                                    address: schoolInfo.ORG_RDNMA)
+                            }
                         }
                     }
                     .padding()
+                    .accentColor(.black)
                 }
             }
             .navigationTitle("일광 신도시 학교정보")
