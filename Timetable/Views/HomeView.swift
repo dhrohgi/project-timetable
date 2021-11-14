@@ -24,20 +24,20 @@ struct HomeView: View {
                     
                     LazyVStack(spacing: 20) {
                         
-                        ForEach(1..<schoolInfoModel.schoolInfos.count) { index in
+                        ForEach(0..<schoolInfoModel.schools.count) { index in
                             
-                            let schoolInfo = schoolInfoModel.schoolInfos[index]
+                            let schoolInfo = schoolInfoModel.schools[index]
                             
                             NavigationLink {
                                 TimeTableView()
                             } label: {
                                 HomeViewRow(
-                                    image: schoolInfo.SCHUL_NM,
-                                    school: schoolInfo.SCHUL_NM,
-                                    description: schoolInfo.JU_ORG_NM,
-                                    zipCode: schoolInfo.ORG_RDNZC,
-                                    phone: schoolInfo.ORG_TELNO,
-                                    address: schoolInfo.ORG_RDNMA)
+                                    image: "일광초등학교",
+                                    school: schoolInfo.SCHUL_NM!,
+                                    description: schoolInfo.JU_ORG_NM!,
+                                    zipCode: schoolInfo.ORG_RDNZC!,
+                                    phone: schoolInfo.ORG_TELNO!,
+                                    address: schoolInfo.ORG_RDNMA!)
                             }
                         }
                     }
