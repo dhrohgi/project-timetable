@@ -7,7 +7,7 @@
 
 import Foundation
 
-class School: Decodable, Identifiable {
+class School: Codable, Identifiable {
     
     var id: UUID?
     var ATPT_OFCDC_SC_CODE: String?

@@ -24,20 +24,26 @@ struct HomeView: View {
                     
                     LazyVStack(spacing: 20) {
                         
-                        ForEach(0..<schoolInfoModel.schools.count) { index in
+                        if schoolInfoModel.schools.count > 0 {
                             
-                            let schoolInfo = schoolInfoModel.schools[index]
-                            
-                            NavigationLink {
-                                TimeTableView()
-                            } label: {
-                                HomeViewRow(
-                                    image: "일광초등학교",
-                                    school: schoolInfo.SCHUL_NM!,
-                                    description: schoolInfo.JU_ORG_NM!,
-                                    zipCode: schoolInfo.ORG_RDNZC!,
-                                    phone: schoolInfo.ORG_TELNO!,
-                                    address: schoolInfo.ORG_RDNMA!)
+                            if let schools = schoolInfoModel.schools {
+                                
+                                ForEach(0..<schools.count) { index in
+                                    
+                                    let school = schools[index]
+                                    
+                                    NavigationLink {
+                                        TimeTableView()
+                                    } label: {
+                                        HomeViewRow(
+                                            image: school.SCHUL_NM!,
+                                            school: school.SCHUL_NM!,
+                                            description: school.JU_ORG_NM!,
+                                            zipCode: school.ORG_RDNZC!,
+                                            phone: school.ORG_TELNO!,
+                                            address: school.ORG_RDNMA!)
+                                    }
+                                }
                             }
                         }
                     }

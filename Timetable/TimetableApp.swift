@@ -12,9 +12,9 @@ struct TimetableApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(SchoolInfoModel())
                 .environmentObject(ElementaryTimetableModel())
                 .environmentObject(MiddleTimetableModel())
-                .environmentObject(SchoolInfoModel())
         }
     }
 }

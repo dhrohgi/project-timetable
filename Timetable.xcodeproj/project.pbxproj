@@ -138,9 +138,9 @@
 		95A0945E271C7F980056F8E2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */,
 				95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */,
 				95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */,
-				95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

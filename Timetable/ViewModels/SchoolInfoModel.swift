@@ -11,15 +11,17 @@ import SwiftUI
 class SchoolInfoModel: ObservableObject {
     
     @Published var schools = [School]()
-        
+    
     init() {
-        getSchoolInfo()
+        getSchoolInfo(7211240)
+        getSchoolInfo(7211243)
+        getSchoolInfo(7211242)
     }
     
-    func getSchoolInfo() {
+    func getSchoolInfo(_ schoolCode: Int) {
         
-          // let urlString = "https://open.neis.go.kr/hub/schoolInfo?KEY=2349feb6b7134d43831f415416e58d88&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=C10"
-          // let url = URL(string: urlString)
+        // let urlString = "https://open.neis.go.kr/hub/schoolInfo?KEY=2349feb6b7134d43831f415416e58d88&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=C10"
+        // let url = URL(string: urlString)
         
         var urlComponents = URLComponents(string: "https://open.neis.go.kr/hub/schoolInfo")
         urlComponents?.queryItems = [
@@ -28,7 +30,7 @@ class SchoolInfoModel: ObservableObject {
             URLQueryItem(name: "pIndex", value: "1"),
             URLQueryItem(name: "pSize", value: "10"),
             URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: "C10"),
-            URLQueryItem(name: "SD_SCHUL_CODE", value: "7211240")
+            URLQueryItem(name: "SD_SCHUL_CODE", value: String(schoolCode))
         ]
         
         let url = urlComponents?.url
@@ -46,29 +48,45 @@ class SchoolInfoModel: ObservableObject {
                 guard let data = data else {
                     return
                 }
-                                
+                
+//                let dataAsString = String(data: data, encoding: .utf8)
+//                print(dataAsString)
+//
+//                do {
+//                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+//                    print(json)
+//                }
+//                catch let jsonErr {
+//                    print("Error serializing json: ", jsonErr)
+//                }
+                
+                
                 do {
-                    //let jsonData = try JSONSerialization.jsonObject(with: data!)
-                    
                     let decoder = JSONDecoder()
                     let result = try decoder.decode(SchoolSearch.self, from: data)
-                    print(result)
                     
-                    for schs in result.schoolInfo {
-                        for sch in schs.row {
-                            sch.id = UUID()
+                    if let schoolInfo = result.schoolInfo {
+                        for schoolInfo in schoolInfo {
+                            
+                            if let schools = schoolInfo.row {
+                                for school in schools {
+                                    school.id = UUID()
+                                }
+                                
+                                DispatchQueue.main.async {
+                                    self.schools += schools
+                                }
+                                
+                            }
                         }
-                        self.schools += schs.row
                     }
-                    
                 }
                 catch {
                     print(error)
                 }
-                
             }
             
             dataTask.resume()
         }
-    }    
+    }
 }

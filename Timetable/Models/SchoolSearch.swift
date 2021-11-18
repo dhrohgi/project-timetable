@@ -7,23 +7,27 @@
 
 import Foundation
 
-struct SchoolSearch: Decodable {
-    var schoolInfo = [SchoolInfo]()
+struct SchoolSearch: Codable {
+    var schoolInfo: [SchoolInfo]?
+    var RESULT: Rst1?
 }
 
-struct SchoolInfo: Decodable {
-    var head = [Head]()
-    var row = [School]()
+struct Rst1: Codable {
+    var CODE: String?
+    var MESSAGE: String?
 }
 
-struct Head: Decodable {
-    var list_total_count = 1
-    var RESULT = Result()
+struct SchoolInfo: Codable {
+    var head: [Head]?
+    var row: [School]?
 }
 
-struct Result: Decodable {
-    var CODE = ""
-    var MESSAGE = ""
+struct Head: Codable {
+    var list_total_count: Int?
+    var RESULT: Rst2?
 }
 
-
+struct Rst2: Codable {
+    var CODE: String?
+    var MESSAGE: String?
+}
