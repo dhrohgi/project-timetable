@@ -9,8 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @EnvironmentObject var schoolInfoModel: SchoolInfoModel
+    @EnvironmentObject var schoolModel: SchoolModel
     
+        
     var body: some View {
         
         NavigationView{
@@ -24,9 +25,9 @@ struct HomeView: View {
                     
                     LazyVStack(spacing: 20) {
                         
-                        if schoolInfoModel.schools.count > 0 {
+                        if schoolModel.schools.count > 0 {
                             
-                            if let schools = schoolInfoModel.schools {
+                            if let schools = schoolModel.schools {
                                 
                                 ForEach(0..<schools.count) { index in
                                     
@@ -59,6 +60,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .environmentObject(SchoolInfoModel())
+            .environmentObject(SchoolModel())
     }
 }

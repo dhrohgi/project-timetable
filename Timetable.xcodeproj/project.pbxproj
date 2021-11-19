@@ -20,7 +20,7 @@
 		95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0946B271CEC620056F8E2 /* HomeViewRow.swift */; };
 		95A09473271DBD030056F8E2 /* schoolInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09472271DBD030056F8E2 /* schoolInfo.json */; };
 		95A09475271DBFC20056F8E2 /* SchoolSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09474271DBFC20056F8E2 /* SchoolSearch.swift */; };
-		95A09477271DC1290056F8E2 /* SchoolInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */; };
+		95A09477271DC1290056F8E2 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09476271DC1290056F8E2 /* SchoolModel.swift */; };
 		95A2625B2738CB9E00E24CA8 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2625A2738CB9E00E24CA8 /* School.swift */; };
 		95CCD7A2271FA042004ED55D /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCD7A1271FA042004ED55D /* TimeTableView.swift */; };
 /* End PBXBuildFile section */
@@ -40,7 +40,7 @@
 		95A0946B271CEC620056F8E2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		95A09472271DBD030056F8E2 /* schoolInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schoolInfo.json; path = ../../../Resources/schoolInfo.json; sourceTree = "<group>"; };
 		95A09474271DBFC20056F8E2 /* SchoolSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSearch.swift; sourceTree = "<group>"; };
-		95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoModel.swift; sourceTree = "<group>"; };
+		95A09476271DC1290056F8E2 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
 		95A2625A2738CB9E00E24CA8 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		95A2625C273F15E100E24CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95CCD7A1271FA042004ED55D /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
@@ -117,10 +117,10 @@
 		95A0945C271C7F890056F8E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */,
-				95A0945F271C80260056F8E2 /* MiddleTimetable.swift */,
 				95A09474271DBFC20056F8E2 /* SchoolSearch.swift */,
 				95A2625A2738CB9E00E24CA8 /* School.swift */,
+				95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */,
+				95A0945F271C80260056F8E2 /* MiddleTimetable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 		95A0945E271C7F980056F8E2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				95A09476271DC1290056F8E2 /* SchoolInfoModel.swift */,
+				95A09476271DC1290056F8E2 /* SchoolModel.swift */,
 				95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */,
 				95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */,
 			);
@@ -220,7 +220,7 @@
 			files = (
 				95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */,
 				95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */,
-				95A09477271DC1290056F8E2 /* SchoolInfoModel.swift in Sources */,
+				95A09477271DC1290056F8E2 /* SchoolModel.swift in Sources */,
 				95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */,
 				95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */,
 				95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */,
