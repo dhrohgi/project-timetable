@@ -15,6 +15,7 @@ struct HomeViewRow: View {
     var zipCode: String
     var phone: String
     var address: String
+    var homePage: String
     
     var body: some View {
         
@@ -38,32 +39,34 @@ struct HomeViewRow: View {
                     Text(school)
                         .bold()
                         .font(.title3)
+                    
                     Text(description)
                         .font(.caption)
                         .padding(.bottom, 10)
                     
                     HStack {
-                        Image(systemName: "mail")
-                            .resizable()
-                            .frame(width: 15, height: 15)
-                        Text(zipCode)
-                            .font(.caption)
-                        
-                        Spacer()
-                        
                         Image(systemName: "phone.circle")
                             .resizable()
                             .frame(width: 15, height: 15)
                         Text(phone)
-                            .font(Font.system(size: 11))
+                            .font(Font.system(size: 12))
                     }
                     
                     HStack {
                         Image(systemName: "house.circle")
                             .resizable()
                             .frame(width: 15, height: 15)
-                        Text(address)
-                            .font(Font.system(size: 11))
+                        Text(address + " ( " + zipCode + ")")
+                            .font(Font.system(size: 12))
+                            .multilineTextAlignment(.leading)
+                    }
+                    
+                    HStack {
+                        Image(systemName: "network")
+                            .resizable()
+                            .frame(width: 15, height: 15)
+                        Text(homePage)
+                            .font(Font.system(size: 12))
                             .multilineTextAlignment(.leading)
                     }
                     
@@ -84,6 +87,7 @@ struct HomeViewRow_Previews: PreviewProvider {
             description: "some description",
             zipCode: "46048",
             phone: "051-930-7770",
-            address: "부산광역시 기장군 일광면 해빛로 46")
+            address: "부산광역시 기장군 일광면 해빛로 46",
+            homePage: "https://www.ilkwang.com")
     }
 }

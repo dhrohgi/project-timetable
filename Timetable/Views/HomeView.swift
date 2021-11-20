@@ -11,7 +11,7 @@ struct HomeView: View {
     
     @EnvironmentObject var schoolModel: SchoolModel
     
-        
+    
     var body: some View {
         
         NavigationView{
@@ -25,25 +25,21 @@ struct HomeView: View {
                     
                     LazyVStack(spacing: 20) {
                         
-                        if schoolModel.schools.count > 0 {
+                        if let schools = schoolModel.schools {
                             
-                            if let schools = schoolModel.schools {
+                            ForEach(schools) { school in
                                 
-                                ForEach(0..<schools.count) { index in
-                                    
-                                    let school = schools[index]
-                                    
-                                    NavigationLink {
-                                        TimeTableView()
-                                    } label: {
-                                        HomeViewRow(
-                                            image: school.SCHUL_NM!,
-                                            school: school.SCHUL_NM!,
-                                            description: school.JU_ORG_NM!,
-                                            zipCode: school.ORG_RDNZC!,
-                                            phone: school.ORG_TELNO!,
-                                            address: school.ORG_RDNMA!)
-                                    }
+                                NavigationLink {
+                                    TimeTableView()
+                                } label: {
+                                    HomeViewRow(
+                                        image: school.SCHUL_NM,
+                                        school: school.SCHUL_NM,
+                                        description: school.JU_ORG_NM ?? "",
+                                        zipCode: school.ORG_RDNZC ?? "",
+                                        phone: school.ORG_TELNO ?? "",
+                                        address: school.ORG_RDNMA ?? "",
+                                        homePage: school.HMPG_ADRES ?? "")
                                 }
                             }
                         }

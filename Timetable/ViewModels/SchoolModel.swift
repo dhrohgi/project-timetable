@@ -11,7 +11,7 @@ import SwiftUI
 class SchoolModel: ObservableObject {
     
     @Published var schools = [School]()
-     
+    
     init() {
         getSchool("7211240")
         getSchool("7211243")
@@ -19,8 +19,6 @@ class SchoolModel: ObservableObject {
     }
     
     func getSchool(_ schoolCode: String) {
-        
-        let schoolCode: String = "7211240"
         
         // let urlString = "https://open.neis.go.kr/hub/schoolInfo?KEY=2349feb6b7134d43831f415416e58d88&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=C10"
         // let url = URL(string: urlString)
@@ -30,7 +28,7 @@ class SchoolModel: ObservableObject {
             URLQueryItem(name: "KEY", value: "2349feb6b7134d43831f415416e58d88"),
             URLQueryItem(name: "Type", value: "json"),
             URLQueryItem(name: "pIndex", value: "1"),
-            URLQueryItem(name: "pSize", value: "300"),
+            URLQueryItem(name: "pSize", value: "10"),
             URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: "C10"),
             URLQueryItem(name: "SD_SCHUL_CODE", value: schoolCode)
         ]
@@ -38,8 +36,8 @@ class SchoolModel: ObservableObject {
         let url = urlComponents?.url
         
         if let url = url {
-            var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
-            request.httpMethod = "GET"
+            let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
+            // request.httpMethod = "GET"
             // request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
             // request.addValue("2349feb6b7134d43831f415416e58d88", forHTTPHeaderField: "Authorization")
             
@@ -51,17 +49,17 @@ class SchoolModel: ObservableObject {
                     return
                 }
                 
-                //                let dataAsString = String(data: data, encoding: .utf8)
-                //                print(dataAsString)
-                //
-                //                do {
-                //                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-                //                    print(json)
-                //                }
-                //                catch let jsonErr {
-                //                    print("Error serializing json: ", jsonErr)
-                //                }
+                             /*   let dataAsString = String(data: data, encoding: .utf8)
+                                print(dataAsString)
                 
+                                do {
+                                    let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                                    print(json)
+                                }
+                                catch let jsonErr {
+                                    print("Error serializing json: ", jsonErr)
+                                }
+                             */
                 
                 do {
                     let decoder = JSONDecoder()
@@ -73,7 +71,6 @@ class SchoolModel: ObservableObject {
                             if let schools = schoolInfo.row {
                                 for school in schools {
                                     school.id = UUID()
-                                    
                                 }
                                 DispatchQueue.main.async {
                                     self.schools += schools

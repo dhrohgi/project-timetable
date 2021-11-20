@@ -42,7 +42,6 @@
 		95A09474271DBFC20056F8E2 /* SchoolSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSearch.swift; sourceTree = "<group>"; };
 		95A09476271DC1290056F8E2 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
 		95A2625A2738CB9E00E24CA8 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
-		95A2625C273F15E100E24CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		95CCD7A1271FA042004ED55D /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +75,6 @@
 		95A09447271C7D2B0056F8E2 /* Timetable */ = {
 			isa = PBXGroup;
 			children = (
-				95A2625C273F15E100E24CA8 /* Info.plist */,
 				95A09448271C7D2B0056F8E2 /* TimetableApp.swift */,
 				95A0945D271C7F920056F8E2 /* Views */,
 				95A0945E271C7F980056F8E2 /* ViewModels */,
