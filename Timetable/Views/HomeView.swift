@@ -30,11 +30,11 @@ struct HomeView: View {
                             ForEach(schools) { school in
                                 
                                 NavigationLink {
-                                    TimeTableView()
+                                    TimetableView()
                                 } label: {
                                     HomeViewRow(
-                                        image: school.SCHUL_NM,
-                                        school: school.SCHUL_NM,
+                                        image: school.SCHUL_NM ?? "",
+                                        school: school.SCHUL_NM ?? "",
                                         description: school.JU_ORG_NM ?? "",
                                         zipCode: school.ORG_RDNZC ?? "",
                                         phone: school.ORG_TELNO ?? "",

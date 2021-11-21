@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95676A3C274A905800209844 /* SchoolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A3B274A905800209844 /* SchoolClass.swift */; };
+		95676A3E274A906800209844 /* SchoolClassSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A3D274A906700209844 /* SchoolClassSearch.swift */; };
+		95676A40274A908200209844 /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A3F274A908200209844 /* ClassModel.swift */; };
+		95676A42274A95AC00209844 /* ElsTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A41274A95AC00209844 /* ElsTime.swift */; };
+		95676A44274A968100209844 /* MisTimeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A43274A968100209844 /* MisTimeSearch.swift */; };
+		95676A48274A96A700209844 /* ElsTimeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A47274A96A700209844 /* ElsTimeSearch.swift */; };
+		95676A4A274A9A4C00209844 /* MealSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A49274A9A4C00209844 /* MealSearch.swift */; };
+		95676A4C274A9A5800209844 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A4B274A9A5800209844 /* Meal.swift */; };
 		95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09448271C7D2B0056F8E2 /* TimetableApp.swift */; };
 		95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0944A271C7D2B0056F8E2 /* HomeView.swift */; };
 		95A0944D271C7D2D0056F8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0944C271C7D2D0056F8E2 /* Assets.xcassets */; };
 		95A09450271C7D2D0056F8E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0944F271C7D2D0056F8E2 /* Preview Assets.xcassets */; };
 		95A09459271C7D6B0056F8E2 /* 일광초등학교시간표.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */; };
 		95A0945B271C7E780056F8E2 /* 일광중학교시간표.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */; };
-		95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0945F271C80260056F8E2 /* MiddleTimetable.swift */; };
-		95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */; };
-		95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */; };
-		95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */; };
+		95A09460271C80270056F8E2 /* MisTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0945F271C80260056F8E2 /* MisTime.swift */; };
+		95A09466271C80D30056F8E2 /* TimetableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09465271C80D30056F8E2 /* TimetableModel.swift */; };
 		95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0946B271CEC620056F8E2 /* HomeViewRow.swift */; };
 		95A09473271DBD030056F8E2 /* schoolInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 95A09472271DBD030056F8E2 /* schoolInfo.json */; };
 		95A09475271DBFC20056F8E2 /* SchoolSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09474271DBFC20056F8E2 /* SchoolSearch.swift */; };
 		95A09477271DC1290056F8E2 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09476271DC1290056F8E2 /* SchoolModel.swift */; };
 		95A2625B2738CB9E00E24CA8 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A2625A2738CB9E00E24CA8 /* School.swift */; };
-		95CCD7A2271FA042004ED55D /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCD7A1271FA042004ED55D /* TimeTableView.swift */; };
+		95CCD7A2271FA042004ED55D /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CCD7A1271FA042004ED55D /* TimetableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95676A3B274A905800209844 /* SchoolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClass.swift; sourceTree = "<group>"; };
+		95676A3D274A906700209844 /* SchoolClassSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClassSearch.swift; sourceTree = "<group>"; };
+		95676A3F274A908200209844 /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		95676A41274A95AC00209844 /* ElsTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsTime.swift; sourceTree = "<group>"; };
+		95676A43274A968100209844 /* MisTimeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisTimeSearch.swift; sourceTree = "<group>"; };
+		95676A47274A96A700209844 /* ElsTimeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsTimeSearch.swift; sourceTree = "<group>"; };
+		95676A49274A9A4C00209844 /* MealSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealSearch.swift; sourceTree = "<group>"; };
+		95676A4B274A9A5800209844 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		95A09445271C7D2B0056F8E2 /* Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A09448271C7D2B0056F8E2 /* TimetableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableApp.swift; sourceTree = "<group>"; };
 		95A0944A271C7D2B0056F8E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -33,16 +47,14 @@
 		95A0944F271C7D2D0056F8E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95A09458271C7D6B0056F8E2 /* 일광초등학교시간표.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "일광초등학교시간표.json"; sourceTree = "<group>"; };
 		95A0945A271C7E780056F8E2 /* 일광중학교시간표.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "일광중학교시간표.json"; sourceTree = "<group>"; };
-		95A0945F271C80260056F8E2 /* MiddleTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTimetable.swift; sourceTree = "<group>"; };
-		95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetable.swift; sourceTree = "<group>"; };
-		95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementaryTimetableModel.swift; sourceTree = "<group>"; };
-		95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleTimetableModel.swift; sourceTree = "<group>"; };
+		95A0945F271C80260056F8E2 /* MisTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisTime.swift; sourceTree = "<group>"; };
+		95A09465271C80D30056F8E2 /* TimetableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableModel.swift; sourceTree = "<group>"; };
 		95A0946B271CEC620056F8E2 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		95A09472271DBD030056F8E2 /* schoolInfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schoolInfo.json; path = ../../../Resources/schoolInfo.json; sourceTree = "<group>"; };
 		95A09474271DBFC20056F8E2 /* SchoolSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSearch.swift; sourceTree = "<group>"; };
 		95A09476271DC1290056F8E2 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
 		95A2625A2738CB9E00E24CA8 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
-		95CCD7A1271FA042004ED55D /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
+		95CCD7A1271FA042004ED55D /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +129,14 @@
 			children = (
 				95A09474271DBFC20056F8E2 /* SchoolSearch.swift */,
 				95A2625A2738CB9E00E24CA8 /* School.swift */,
-				95A09461271C804A0056F8E2 /* ElementaryTimetable.swift */,
-				95A0945F271C80260056F8E2 /* MiddleTimetable.swift */,
+				95676A3D274A906700209844 /* SchoolClassSearch.swift */,
+				95676A3B274A905800209844 /* SchoolClass.swift */,
+				95676A43274A968100209844 /* MisTimeSearch.swift */,
+				95A0945F271C80260056F8E2 /* MisTime.swift */,
+				95676A47274A96A700209844 /* ElsTimeSearch.swift */,
+				95676A41274A95AC00209844 /* ElsTime.swift */,
+				95676A49274A9A4C00209844 /* MealSearch.swift */,
+				95676A4B274A9A5800209844 /* Meal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,7 +146,7 @@
 			children = (
 				95A0944A271C7D2B0056F8E2 /* HomeView.swift */,
 				95A0946B271CEC620056F8E2 /* HomeViewRow.swift */,
-				95CCD7A1271FA042004ED55D /* TimeTableView.swift */,
+				95CCD7A1271FA042004ED55D /* TimetableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				95A09476271DC1290056F8E2 /* SchoolModel.swift */,
-				95A09463271C80BF0056F8E2 /* ElementaryTimetableModel.swift */,
-				95A09465271C80D30056F8E2 /* MiddleTimetableModel.swift */,
+				95676A3F274A908200209844 /* ClassModel.swift */,
+				95A09465271C80D30056F8E2 /* TimetableModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -216,16 +234,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95676A4A274A9A4C00209844 /* MealSearch.swift in Sources */,
+				95676A42274A95AC00209844 /* ElsTime.swift in Sources */,
+				95676A40274A908200209844 /* ClassModel.swift in Sources */,
+				95676A4C274A9A5800209844 /* Meal.swift in Sources */,
+				95676A3C274A905800209844 /* SchoolClass.swift in Sources */,
 				95A0946C271CEC620056F8E2 /* HomeViewRow.swift in Sources */,
-				95A09466271C80D30056F8E2 /* MiddleTimetableModel.swift in Sources */,
+				95A09466271C80D30056F8E2 /* TimetableModel.swift in Sources */,
 				95A09477271DC1290056F8E2 /* SchoolModel.swift in Sources */,
+				95676A44274A968100209844 /* MisTimeSearch.swift in Sources */,
 				95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */,
-				95A09462271C804A0056F8E2 /* ElementaryTimetable.swift in Sources */,
-				95A09460271C80270056F8E2 /* MiddleTimetable.swift in Sources */,
+				95A09460271C80270056F8E2 /* MisTime.swift in Sources */,
 				95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */,
-				95A09464271C80BF0056F8E2 /* ElementaryTimetableModel.swift in Sources */,
+				95676A48274A96A700209844 /* ElsTimeSearch.swift in Sources */,
 				95A2625B2738CB9E00E24CA8 /* School.swift in Sources */,
-				95CCD7A2271FA042004ED55D /* TimeTableView.swift in Sources */,
+				95CCD7A2271FA042004ED55D /* TimetableView.swift in Sources */,
+				95676A3E274A906800209844 /* SchoolClassSearch.swift in Sources */,
 				95A09475271DBFC20056F8E2 /* SchoolSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

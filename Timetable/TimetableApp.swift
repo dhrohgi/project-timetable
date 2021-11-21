@@ -13,8 +13,7 @@ struct TimetableApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(SchoolModel())
-                .environmentObject(ElementaryTimetableModel())
-                .environmentObject(MiddleTimetableModel())
+                .environmentObject(TimetableModel())
         }
     }
 }

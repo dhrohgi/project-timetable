@@ -1,5 +1,5 @@
 //
-//  TimeTableView.swift
+//  TimetableView.swift
 //  Timetable
 //
 //  Created by dennis on 10/19/21.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TimeTableView: View {
+struct TimetableView: View {
     
-    @EnvironmentObject var eTimetableModel: ElementaryTimetableModel
+    @EnvironmentObject var TimetableModel: TimetableModel
     
     var body: some View {
         
@@ -17,9 +17,9 @@ struct TimeTableView: View {
     }
 }
 
-struct TimeTableView_Previews: PreviewProvider {
+struct TimetableView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeTableView()
-            .environmentObject(ElementaryTimetableModel())
+        TimetableView()
+            .environmentObject(TimetableModel())
     }
 }

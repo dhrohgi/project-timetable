@@ -10,10 +10,10 @@ import Foundation
 class School: Decodable, Identifiable {
     
     var id: UUID?
-    var ATPT_OFCDC_SC_CODE: String
-    var ATPT_OFCDC_SC_NM: String
-    var SD_SCHUL_CODE: String
-    var SCHUL_NM: String
+    var ATPT_OFCDC_SC_CODE: String?
+    var ATPT_OFCDC_SC_NM: String?
+    var SD_SCHUL_CODE: String?
+    var SCHUL_NM: String?
     var ENG_SCHUL_NM: String?
     var SCHUL_KND_SC_NM: String?
     var LCTN_SC_NM: String?
