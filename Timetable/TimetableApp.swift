@@ -13,7 +13,9 @@ struct TimetableApp: App {
         WindowGroup {
             HomeView()
                 .environmentObject(SchoolModel())
+                .environmentObject(ClassModel())
                 .environmentObject(TimetableModel())
+                .environmentObject(MealModel())
         }
     }
 }

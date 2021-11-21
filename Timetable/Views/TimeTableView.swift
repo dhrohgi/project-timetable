@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TimetableView: View {
     
-    @EnvironmentObject var TimetableModel: TimetableModel
+    @EnvironmentObject var classModel: ClassModel
+    @EnvironmentObject var timetableModel: TimetableModel
     
     var body: some View {
         
@@ -20,6 +21,7 @@ struct TimetableView: View {
 struct TimetableView_Previews: PreviewProvider {
     static var previews: some View {
         TimetableView()
+            .environmentObject(ClassModel())
             .environmentObject(TimetableModel())
     }
 }
