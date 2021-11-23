@@ -9,11 +9,12 @@ import SwiftUI
 
 struct MealView: View {
     
-    @EnvironmentObject var mealModel: MealModel
-    
+    @EnvironmentObject var mealModel: MealModel    
+    var schoolCode: String = ""
+       
     var body: some View {
         
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("급식정보 입니다")
         
     }
 }

@@ -22,12 +22,13 @@ class ClassModel:ObservableObject {
         
         var urlComponents = URLComponents(string: "https://open.neis.go.kr/hub/classInfo")
         urlComponents?.queryItems = [
-            URLQueryItem.init(name: "KEY", value: "2349feb6b7134d43831f415416e58d88"),
+            URLQueryItem(name: "KEY", value: "f468427a1c1b4faea6e3b3626c2b53ad"),
             URLQueryItem(name: "Type", value: "json"),
             URLQueryItem(name: "pIndex", value: "1"),
             URLQueryItem(name: "pSize", value: "10"),
             URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: "C10"),
-            URLQueryItem(name: "SD_SCHUL_CODE", value: schoolCode)
+            URLQueryItem(name: "SD_SCHUL_CODE", value: schoolCode),
+            URLQueryItem(name: "AY", value: "2021")
         ]
         
         let url = urlComponents?.url

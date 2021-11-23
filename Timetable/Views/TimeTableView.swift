@@ -10,11 +10,11 @@ import SwiftUI
 struct TimetableView: View {
     
     @EnvironmentObject var classModel: ClassModel
-    @EnvironmentObject var timetableModel: TimetableModel
+    @EnvironmentObject var timetableModel: MisTimeModel
     
     var body: some View {
         
-        Text("Time Table Here")
+        Text("시간표 입니다")
     }
 }
 
@@ -22,6 +22,6 @@ struct TimetableView_Previews: PreviewProvider {
     static var previews: some View {
         TimetableView()
             .environmentObject(ClassModel())
-            .environmentObject(TimetableModel())
+            .environmentObject(MisTimeModel())
     }
 }

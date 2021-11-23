@@ -11,10 +11,10 @@ import SwiftUI
 struct TimetableApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SchoolTabView()
                 .environmentObject(SchoolModel())
                 .environmentObject(ClassModel())
-                .environmentObject(TimetableModel())
+                .environmentObject(MisTimeModel())
                 .environmentObject(MealModel())
         }
     }
