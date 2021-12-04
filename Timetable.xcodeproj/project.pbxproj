@@ -20,6 +20,7 @@
 		95676A52274B26E800209844 /* SchoolTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A51274B26E800209844 /* SchoolTabView.swift */; };
 		95676A54274C94CD00209844 /* ElsTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A53274C94CD00209844 /* ElsTimeModel.swift */; };
 		95676A56274C962000209844 /* MisTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95676A55274C962000209844 /* MisTimeModel.swift */; };
+		9598049F2752BDEF00790FF7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598049E2752BDEF00790FF7 /* Constants.swift */; };
 		95A09449271C7D2B0056F8E2 /* TimetableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A09448271C7D2B0056F8E2 /* TimetableApp.swift */; };
 		95A0944B271C7D2B0056F8E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0944A271C7D2B0056F8E2 /* HomeView.swift */; };
 		95A0944D271C7D2D0056F8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0944C271C7D2D0056F8E2 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		95676A51274B26E800209844 /* SchoolTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTabView.swift; sourceTree = "<group>"; };
 		95676A53274C94CD00209844 /* ElsTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElsTimeModel.swift; sourceTree = "<group>"; };
 		95676A55274C962000209844 /* MisTimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisTimeModel.swift; sourceTree = "<group>"; };
+		9598049E2752BDEF00790FF7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		95A09445271C7D2B0056F8E2 /* Timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A09448271C7D2B0056F8E2 /* TimetableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableApp.swift; sourceTree = "<group>"; };
 		95A0944A271C7D2B0056F8E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		95A09456271C7D360056F8E2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				9598049E2752BDEF00790FF7 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -166,8 +169,8 @@
 			children = (
 				95A09476271DC1290056F8E2 /* SchoolModel.swift */,
 				95676A3F274A908200209844 /* ClassModel.swift */,
-				95676A55274C962000209844 /* MisTimeModel.swift */,
 				95676A53274C94CD00209844 /* ElsTimeModel.swift */,
+				95676A55274C962000209844 /* MisTimeModel.swift */,
 				95676A4D274AA64C00209844 /* MealModel.swift */,
 			);
 			path = ViewModels;
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95676A4A274A9A4C00209844 /* MealSearch.swift in Sources */,
+				9598049F2752BDEF00790FF7 /* Constants.swift in Sources */,
 				95676A42274A95AC00209844 /* ElsTime.swift in Sources */,
 				95676A40274A908200209844 /* ClassModel.swift in Sources */,
 				95676A4C274A9A5800209844 /* Meal.swift in Sources */,

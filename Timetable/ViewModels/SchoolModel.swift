@@ -13,9 +13,9 @@ class SchoolModel: ObservableObject {
     @Published var schools = [School]()
     
     init() {
-        getSchool("7211240")
-        getSchool("7211243")
-        getSchool("7211242")
+        getSchool(Constants.ilgwangElsKey)
+        getSchool(Constants.habitElsKey)
+        getSchool(Constants.ilgwangMisKey)
     }
     
     func getSchool(_ schoolCode: String) {
@@ -23,13 +23,13 @@ class SchoolModel: ObservableObject {
         // let urlString = "https://open.neis.go.kr/hub/schoolInfo?KEY=2349feb6b7134d43831f415416e58d88&Type=json&pIndex=1&pSize=10&ATPT_OFCDC_SC_CODE=C10"
         // let url = URL(string: urlString)
         
-        var urlComponents = URLComponents(string: "https://open.neis.go.kr/hub/schoolInfo")
+        var urlComponents = URLComponents(string: Constants.apiUrlSchool)
         urlComponents?.queryItems = [
-            URLQueryItem(name: "KEY", value: "2349feb6b7134d43831f415416e58d88"),
+            URLQueryItem(name: "KEY", value: Constants.apiKey1),
             URLQueryItem(name: "Type", value: "json"),
-            URLQueryItem(name: "pIndex", value: "1"),
-            URLQueryItem(name: "pSize", value: "10"),
-            URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: "C10"),
+            URLQueryItem(name: "pIndex", value: Constants.pageIndex),
+            URLQueryItem(name: "pSize", value: Constants.pageSize),
+            URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: Constants.educationOfficeKey),
             URLQueryItem(name: "SD_SCHUL_CODE", value: schoolCode)
         ]
         

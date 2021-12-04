@@ -12,15 +12,16 @@ class MealModel: ObservableObject {
     
     @Published var meals = [Meal]()
     
+    
     func getMeal(_ schoolCode: String) {
         
-        var urlComponents = URLComponents(string: "https://open.neis.go.kr/hub/mealServiceDietInfo")
+        var urlComponents = URLComponents(string: Constants.apiUrlMeal)
         urlComponents?.queryItems = [
-            URLQueryItem(name: "KEY", value: "e31b83f2952d4efda484ad8b4c134b11"),
+            URLQueryItem(name: "KEY", value: Constants.apiKey3),
             URLQueryItem(name: "Type", value: "json"),
-            URLQueryItem(name: "pIndex", value: "1"),
-            URLQueryItem(name: "pSize", value: "10"),
-            URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: "C10"),
+            URLQueryItem(name: "pIndex", value: Constants.pageIndex),
+            URLQueryItem(name: "pSize", value: Constants.pageSize),
+            URLQueryItem(name: "ATPT_OFCDC_SC_CODE", value: Constants.educationOfficeKey),
             URLQueryItem(name: "SD_SCHUL_CODE", value: schoolCode),
             URLQueryItem(name: "MLSV_YMD", value: "20211122")
         ]
